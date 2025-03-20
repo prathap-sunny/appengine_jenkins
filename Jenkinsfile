@@ -23,6 +23,8 @@ pipeline {
                     
                     # Install Python3 and development tools if not installed
                     sudo apt-get install -y python3-pip python3-dev python3-venv bash
+
+                    echo "yourpassword" | sudo -S apt-get update -y
                     
                     # Create a virtual environment
                     python3 -m venv venv
